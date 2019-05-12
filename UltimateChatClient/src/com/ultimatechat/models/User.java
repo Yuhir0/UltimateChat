@@ -35,9 +35,4 @@ public class User {
     public boolean check(String password) {
         return this.password.equals(password);
     }
-
-    @Override
-    public String toString() {
-        return username;
-    }
 }

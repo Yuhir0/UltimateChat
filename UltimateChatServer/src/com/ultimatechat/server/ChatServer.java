@@ -1,8 +1,9 @@
 package com.ultimatechat.server;
 
-import java.io.DataInputStream;
-import java.io.DataOutputStream;
-import java.io.IOException;
+import com.ultimatechat.models.Message;
+import com.ultimatechat.models.User;
+
+import java.io.*;
 import java.net.ServerSocket;
 import java.net.Socket;
 import java.net.SocketException;
@@ -15,14 +16,16 @@ public class ChatServer {
 
     private class ClientListener extends Thread {
         private Socket clientConnection;
-        private DataInputStream in;
-        private DataOutputStream out;
+        private ObjectInputStream in;
+        private ObjectOutputStream out;
 
         public ClientListener(Socket clientConnection) {
             this.clientConnection = clientConnection;
             try {
-                in = new DataInputStream(clientConnection.getInputStream());
-                out = new DataOutputStream(clientConnection.getOutputStream());
+                //in = new DataInputStream(clientConnection.getInputStream());
+                //out = new DataOutputStream(clientConnection.getOutputStream());
+                in = new ObjectInputStream(clientConnection.getInputStream());
+                out = new ObjectOutputStream(clientConnection.getOutputStream());
             } catch (Exception e) {
                 e.printStackTrace();
             }
@@ -30,34 +33,38 @@ public class ChatServer {
 
         public void run() {
             boolean quit = false;
-            String nick = null;
+            User user = null;
             try {
-                nick = in.readUTF();
-                System.out.println("User " + nick + " logged in with ip " + clientConnection.getInetAddress());
-            } catch (IOException e) {
+                user = (User) in.readObject();
+                System.out.println("User " + user + " logged in with ip " + clientConnection.getInetAddress());
+            } catch (IOException | ClassNotFoundException e) {
                 e.printStackTrace();
             }
 
-            broadcastMessage("User " + nick + " logged in");
+            broadcastMessage(new Message(null, null, "User " + user + " logged in"));
             while (!quit) {
                 try {
-                    String message = in.readUTF();
-                    if (message.toLowerCase().equals("\\q")) {
+                    System.out.println(in.readObject());
+                    Message message = (Message) in.readObject();
+                    if (message.getMessage().toLowerCase().equals("\\q")) {
                         quit = true;
-                        broadcastMessage(nick + " logged out");
-                        System.out.println("User " + nick + " logged out with ip " + clientConnection.getInetAddress());
+                        broadcastMessage(new Message(null, null, user + " logged out"));
+                        System.out.println("User " + user + " logged out with ip " + clientConnection.getInetAddress());
+                        clientConnection.close();
                         clients.remove(this);
                     } else {
-                        broadcastMessage(nick + ": " + message);
-                        System.out.println(nick + ": " + message);
+                        broadcastMessage(message);
+                        System.out.println(message);
                     }
                 } catch (IOException e) {
                     //e.printStackTrace();
+                } catch (ClassNotFoundException e) {
+                    e.printStackTrace();
                 }
             }
         }
 
-        private void broadcastMessage(String message) {
+        private void broadcastMessage(Message message) {
             for (ClientListener client : clients) {
                 try {
                     if (!client.clientConnection.equals(clientConnection)) {
@@ -67,13 +74,13 @@ public class ChatServer {
                             client.sendMessage(message);
                         }
                     }
-                } catch (Exception e) {}
+                } catch (Exception ignore) {}
             }
         }
 
-        public void sendMessage(String message) {
+        public void sendMessage(Message message) {
             try {
-                out.writeUTF(message);
+                out.writeObject(message);
             } catch (Exception e) {
                 e.printStackTrace();
             }
@@ -87,6 +94,7 @@ public class ChatServer {
 
             while(true) {
                 ClientListener client = parent.new ClientListener(serverListener.accept());
+                System.out.println("Nueva conexion");
                 client.start();
                 clients.add(client);
             }
