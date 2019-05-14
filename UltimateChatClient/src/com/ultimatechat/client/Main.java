@@ -16,7 +16,8 @@ public class Main {
         EventQueue.invokeLater(new Runnable() {
             public void run() {
                 try {
-                    MainChatView chat = new MainChatView(new Dimension(720, 480));
+                    MainChatView chat = new MainChatView(new Dimension(1092, 720));
+                    //MainChatView chat = new MainChatView(new Dimension(720, 480));
                     chat.setVisible(true);
                 } catch (Exception e) {
                     e.printStackTrace();

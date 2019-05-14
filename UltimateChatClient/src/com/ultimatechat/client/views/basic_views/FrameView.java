@@ -4,8 +4,11 @@ import javax.swing.*;
 import java.awt.*;
 
 public class FrameView extends JFrame {
+
+    private static final Dimension DIMESION_SIZE = new Dimension(500, 500);
+
     public FrameView(){
-        createView(new Dimension(500, 500));
+        createView(DIMESION_SIZE);
     }
 
     public FrameView(Dimension d) {

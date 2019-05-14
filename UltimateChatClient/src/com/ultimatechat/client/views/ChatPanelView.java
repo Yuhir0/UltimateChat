@@ -6,9 +6,11 @@ import com.ultimatechat.views.basic_views.PanelView;
 
 import javax.swing.*;
 import java.awt.*;
+import java.util.ArrayList;
 
 public class ChatPanelView extends PanelView {
 
+    private JScrollPane messagesScrollView;
     private JList<Message> messageListView;
     private Chat chat;
 
@@ -16,7 +18,8 @@ public class ChatPanelView extends PanelView {
         super(d);
     }
 
-    public ChatPanelView(Dimension container, int widthPercent, int heightPercent) {
+
+    public ChatPanelView(Dimension container, Double widthPercent, Double heightPercent) {
         super(container, widthPercent, heightPercent);
     }
 
@@ -25,6 +28,16 @@ public class ChatPanelView extends PanelView {
         setSize(d);
         setBackground(Color.BLUE);
         messageListView = new JList<>();
-        messageListView.setBounds(0, 0, d.width, d.height);
+        messagesScrollView = new JScrollPane(messageListView);
+        setLayout(new BorderLayout());
+        add(messagesScrollView, BorderLayout.CENTER);
+    }
+
+    public void setChat(Chat chat) {
+        this.chat = chat;
+        ArrayList<Message> chatMessages = chat.getMessages();
+        Message[] messages = new Message[chatMessages.size()];
+        chatMessages.toArray(messages);
+        messageListView.setListData(messages);
     }
 }

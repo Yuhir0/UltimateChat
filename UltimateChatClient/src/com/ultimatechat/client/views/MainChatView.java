@@ -5,17 +5,21 @@ import com.ultimatechat.models.Message;
 import com.ultimatechat.models.User;
 import com.ultimatechat.views.basic_views.FrameView;
 
+import javax.swing.border.Border;
 import java.awt.*;
 import java.awt.event.WindowEvent;
 import java.awt.event.WindowListener;
 
 public class MainChatView extends FrameView {
 
-    ChatPanelView chatView;
-    UsersPanelView usersView;
+    private static final Dimension DIMESION_SIZE = new Dimension(720, 480);
+
+    // View components
+    private ChatPanelView chatView;
+    private UsersPanelView usersView;
 
     public MainChatView() {
-        super(new Dimension(720, 480));
+        super(DIMESION_SIZE);
     }
 
     public MainChatView(Dimension d) {
@@ -27,9 +31,11 @@ public class MainChatView extends FrameView {
         setSize(d);
         setMinimumSize(d);
         setDefaultCloseOperation(EXIT_ON_CLOSE);
+        setResizable(false);
 
         Container container = getContentPane();
-        container.setLayout(null);
+        container.setLayout(new BorderLayout());
+        //container.setLayout(null);
 
         // Chat
         User user1 = new User("oscar", "pass");
@@ -37,22 +43,27 @@ public class MainChatView extends FrameView {
         Chat chat = new Chat(user1, user2);
         chat.addMesage(new Message(user1, user2, "hola"));
         chat.addMesage(new Message(user2, user1, "hola"));
+        chat.addMesage(new Message(user2, user1, "hola"));
+        chat.addMesage(new Message(user1, user2, "Que tal?"));
+        chat.addMesage(new Message(user1, user2, "Que tal?"));
         chat.addMesage(new Message(user1, user2, "Que tal?"));
         chat.addMesage(new Message(user2, user1, "bien"));
-        chatView = new ChatPanelView(getSize(), 70, 88);
+        chat.addMesage(new Message(user2, user1, "bien"));
+        chatView = new ChatPanelView(getSize(), 80.0, 95.0);
         chatView.setBounds(0, 0, chatView.getWidth(), chatView.getHeight());
-        // chatView.setChat(chat);
-        container.add(chatView);
+        chatView.setChat(chat);
+        container.add(chatView, BorderLayout.CENTER);
 
         // Users
-        usersView = new UsersPanelView(getSize(), 30, 88);
-        usersView.setBounds(chatView.getWidth(), 0, usersView.getWidth(), usersView.getHeight());
-        container.add(usersView);
+        usersView = new UsersPanelView(getSize(), 20.0, 95.0);
+        //usersView.setBounds(chatView.getWidth(), 0, usersView.getWidth(), usersView.getHeight());
+        usersView.setUsers(new User[] {user1, user2});
+        container.add(usersView, BorderLayout.EAST);
 
         // Input
-        UserInputPanelView userInputView = new UserInputPanelView(getSize(), 100, 12);
-        userInputView.setBounds(0, chatView.getHeight(), userInputView.getWidth(), userInputView.getHeight());
-        container.add(userInputView);
+        UserInputPanelView userInputView = new UserInputPanelView(getSize(), 100.0, 5.0);
+        //userInputView.setBounds(0, chatView.getHeight(), userInputView.getWidth(), userInputView.getHeight());
+        container.add(userInputView, BorderLayout.SOUTH);
 
         addWindowListener(windowListener());
     }

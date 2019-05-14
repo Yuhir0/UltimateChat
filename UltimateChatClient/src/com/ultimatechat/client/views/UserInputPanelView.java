@@ -11,20 +11,21 @@ public class UserInputPanelView extends PanelView {
         super(d);
     }
 
-    public UserInputPanelView(Dimension container, int widthPercent, int heightPercent) {
+    public UserInputPanelView(Dimension container, Double widthPercent, Double heightPercent) {
         super(container, widthPercent, heightPercent);
     }
 
     @Override
     protected void createView(Dimension d) {
+        setLayout(new BorderLayout());
         setBackground(Color.GREEN);
-
+        setMinimumSize(new Dimension(100, 50));
+        setMinimumSize(new Dimension(1080, 100));
         setSize(d);
-
-        JTextField texInput = new JTextField(40);
-        add(texInput);
+        JTextField texInput = new JTextField(getSize().width / 15);
+        add(texInput, BorderLayout.CENTER);
 
         JButton sendBtn = new JButton("Send");
-        add(sendBtn);
+        add(sendBtn, BorderLayout.EAST);
     }
 }
