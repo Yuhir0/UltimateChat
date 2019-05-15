@@ -50,7 +50,7 @@ public class InputController {
     private void evaluateText() {
         String text = inputPanelView.getTexInput().getText();
         if (!text.isBlank()) {
-            sendMessage(new Message(user, destinationUser, text));
+            sendMessage(new Message(user, destinationUser, text.strip()));
             inputPanelView.getTexInput().setText("");
         }
     }

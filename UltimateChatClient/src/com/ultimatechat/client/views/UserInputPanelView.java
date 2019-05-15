@@ -11,22 +11,44 @@ public class UserInputPanelView extends PanelView {
     private JTextField texInput;
     private JButton sendBtn;
 
+    /**
+     * Constructor passes Dimension to Panel size
+     * @param d Dimension
+     */
     public UserInputPanelView(Dimension d) {
         super(d);
     }
 
+    /**
+     * Constructor to make Relative size to de container
+     * @param container Dimensions from view contains this
+     * @param widthPercent Double
+     * @param heightPercent Double
+     */
     public UserInputPanelView(Dimension container, Double widthPercent, Double heightPercent) {
         super(container, widthPercent, heightPercent);
     }
 
+    /**
+     * Returns textInput property
+     * @return JTextField
+     */
     public JTextField getTexInput() {
         return texInput;
     }
 
+    /**
+     * Returns sendBtn property
+     * @return JButton
+     */
     public JButton getSendBtn() {
         return sendBtn;
     }
 
+    /**
+     * Create view and all components based on dimension
+     * @param d Dimension
+     */
     @Override
     protected void createView(Dimension d) {
         setLayout(new BorderLayout());

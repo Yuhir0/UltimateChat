@@ -33,7 +33,6 @@ public class MainChatController extends FrameController {
 
     @Override
     protected void createView(Dimension d) {
-        // Set controllers
 
         setSize(d);
         setDefaultCloseOperation(EXIT_ON_CLOSE);
