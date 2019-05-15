@@ -20,6 +20,9 @@ public class MainChatController extends FrameController {
     private ChatPanelView chatView;
     private UsersPanelView usersView;
 
+    // Controllers
+    private InputController inputController;
+
     public MainChatController() {
         super(DIMESION_SIZE);
     }
@@ -30,6 +33,8 @@ public class MainChatController extends FrameController {
 
     @Override
     protected void createView(Dimension d) {
+        // Set controllers
+
         setSize(d);
         setDefaultCloseOperation(EXIT_ON_CLOSE);
 
@@ -48,10 +53,10 @@ public class MainChatController extends FrameController {
         chat.addMesage(new Message(user1, user2, "Que tal?"));
         chat.addMesage(new Message(user2, user1, "bien"));
         chat.addMesage(new Message(user2, user1, "bien"));
-        chatView = new ChatPanelView(getSize(), 80.0, 95.0);
-        chatView.setChat(chat);
 
         // Chat
+        chatView = new ChatPanelView(getSize(), 80.0, 95.0);
+        chatView.setChat(chat);
         container.add(chatView, BorderLayout.CENTER);
 
         // Users
@@ -63,8 +68,11 @@ public class MainChatController extends FrameController {
         UserInputPanelView userInputView = new UserInputPanelView(getSize(), 100.0, 5.0);
         container.add(userInputView, BorderLayout.SOUTH);
 
+        new InputController(user1, user2, userInputView);
+
         addWindowListener(windowListener());
     }
+
 
     private WindowListener windowListener() {
         return new WindowListener() {

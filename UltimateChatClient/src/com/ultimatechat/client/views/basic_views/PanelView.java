@@ -1,9 +1,13 @@
 package com.ultimatechat.client.views.basic_views;
 
+import com.ultimatechat.client.Controllers.InputController;
+
 import javax.swing.*;
 import java.awt.*;
 
 public class PanelView extends JPanel {
+
+
     public PanelView(Dimension d) {
         createView(d);
     }
@@ -22,4 +26,5 @@ public class PanelView extends JPanel {
     protected void createView(Dimension dimension) {
         setSize(dimension);
     }
+
 }

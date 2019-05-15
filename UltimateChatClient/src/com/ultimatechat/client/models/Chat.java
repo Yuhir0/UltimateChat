@@ -22,4 +22,16 @@ public class Chat {
     public void addMesage(Message message) {
         this.messages.add(message);
     }
+
+    public void deleteMessage(Message message) {
+        messages.remove(message);
+    }
+
+    public void deleteMessage(int index) {
+        messages.remove(index);
+    }
+
+    public void clearChat() {
+        messages = new ArrayList<>();
+    }
 }

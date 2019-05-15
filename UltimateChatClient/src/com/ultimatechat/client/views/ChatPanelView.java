@@ -33,11 +33,33 @@ public class ChatPanelView extends PanelView {
         add(messagesScrollView, BorderLayout.CENTER);
     }
 
-    public void setChat(Chat chat) {
-        this.chat = chat;
+    public void updateChatView() {
         ArrayList<Message> chatMessages = chat.getMessages();
         Message[] messages = new Message[chatMessages.size()];
         chatMessages.toArray(messages);
         messageListView.setListData(messages);
+    }
+    public void setChat(Chat chat) {
+        this.chat = chat;
+        updateChatView();
+    }
+
+    public void addMessage(Message message) {
+        chat.addMesage(message);
+        updateChatView();
+    }
+
+    public Chat getChat() {
+        return chat;
+    }
+
+    public void deleteMessage(Message message) {
+        chat.deleteMessage(message);
+        // controller.updateChat(chat);
+    }
+
+    public void clearChat() {
+        chat.clearChat();
+        // controller.updateChat(chat);
     }
 }

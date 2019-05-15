@@ -28,6 +28,7 @@ public class UsersPanelView extends PanelView {
         usersScrollView = new JScrollPane(usersListView);
         setLayout(new BorderLayout());
         add(usersScrollView, BorderLayout.CENTER);
+
     }
 
     public void setUsers (User[] users) {

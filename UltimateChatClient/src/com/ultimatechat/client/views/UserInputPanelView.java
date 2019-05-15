@@ -4,8 +4,12 @@ import com.ultimatechat.client.views.basic_views.PanelView;
 
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.*;
 
 public class UserInputPanelView extends PanelView {
+
+    private JTextField texInput;
+    private JButton sendBtn;
 
     public UserInputPanelView(Dimension d) {
         super(d);
@@ -15,17 +19,25 @@ public class UserInputPanelView extends PanelView {
         super(container, widthPercent, heightPercent);
     }
 
+    public JTextField getTexInput() {
+        return texInput;
+    }
+
+    public JButton getSendBtn() {
+        return sendBtn;
+    }
+
     @Override
     protected void createView(Dimension d) {
         setLayout(new BorderLayout());
-        setBackground(Color.GREEN);
         setMinimumSize(new Dimension(100, 50));
         setMinimumSize(new Dimension(1080, 100));
         setSize(d);
-        JTextField texInput = new JTextField(getSize().width / 15);
+
+        texInput = new JTextField(getSize().width / 15);
         add(texInput, BorderLayout.CENTER);
 
-        JButton sendBtn = new JButton("Send");
+        sendBtn = new JButton("Send");
         add(sendBtn, BorderLayout.EAST);
     }
 }
