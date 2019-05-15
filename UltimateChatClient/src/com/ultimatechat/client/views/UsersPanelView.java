@@ -1,10 +1,9 @@
-package com.ultimatechat.views;
+package com.ultimatechat.client.views;
 
-import com.ultimatechat.models.User;
-import com.ultimatechat.views.basic_views.PanelView;
+import com.ultimatechat.client.models.User;
+import com.ultimatechat.client.views.basic_views.PanelView;
 
 import javax.swing.*;
-import javax.swing.border.Border;
 import java.awt.*;
 
 public class UsersPanelView extends PanelView {
@@ -24,12 +23,9 @@ public class UsersPanelView extends PanelView {
     @Override
     protected void createView(Dimension d) {
         setSize(d);
-        setBackground(Color.RED);
-
         usersListView = new JList<>();
-
+        usersListView.setFocusable(false);
         usersScrollView = new JScrollPane(usersListView);
-
         setLayout(new BorderLayout());
         add(usersScrollView, BorderLayout.CENTER);
     }

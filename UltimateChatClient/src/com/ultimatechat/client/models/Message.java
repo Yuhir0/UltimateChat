@@ -1,4 +1,4 @@
-package com.ultimatechat.models;
+package com.ultimatechat.client.models;
 
 public class Message {
     private User emissor;

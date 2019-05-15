@@ -1,8 +1,8 @@
-package com.ultimatechat.views;
+package com.ultimatechat.client.views;
 
-import com.ultimatechat.models.Chat;
-import com.ultimatechat.models.Message;
-import com.ultimatechat.views.basic_views.PanelView;
+import com.ultimatechat.client.models.Chat;
+import com.ultimatechat.client.models.Message;
+import com.ultimatechat.client.views.basic_views.PanelView;
 
 import javax.swing.*;
 import java.awt.*;
@@ -26,8 +26,8 @@ public class ChatPanelView extends PanelView {
     @Override
     protected void createView(Dimension d) {
         setSize(d);
-        setBackground(Color.BLUE);
         messageListView = new JList<>();
+        messageListView.setFocusable(false);
         messagesScrollView = new JScrollPane(messageListView);
         setLayout(new BorderLayout());
         add(messagesScrollView, BorderLayout.CENTER);

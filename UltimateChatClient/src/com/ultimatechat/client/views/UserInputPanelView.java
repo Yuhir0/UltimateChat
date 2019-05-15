@@ -1,6 +1,6 @@
-package com.ultimatechat.views;
+package com.ultimatechat.client.views;
 
-import com.ultimatechat.views.basic_views.PanelView;
+import com.ultimatechat.client.views.basic_views.PanelView;
 
 import javax.swing.*;
 import java.awt.*;

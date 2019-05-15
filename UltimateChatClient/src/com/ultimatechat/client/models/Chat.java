@@ -1,4 +1,4 @@
-package com.ultimatechat.models;
+package com.ultimatechat.client.models;
 
 import java.util.ArrayList;
 

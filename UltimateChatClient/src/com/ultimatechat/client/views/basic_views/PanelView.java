@@ -1,4 +1,4 @@
-package com.ultimatechat.views.basic_views;
+package com.ultimatechat.client.views.basic_views;
 
 import javax.swing.*;
 import java.awt.*;

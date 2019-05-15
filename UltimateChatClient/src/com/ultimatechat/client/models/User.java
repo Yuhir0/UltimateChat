@@ -1,4 +1,4 @@
-package com.ultimatechat.models;
+package com.ultimatechat.client.models;
 
 public class User {
     private String username;

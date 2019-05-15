@@ -1,13 +1,15 @@
 package com.ultimatechat.client;
 
 
-import com.ultimatechat.views.MainChatView;
+import com.ultimatechat.client.Controllers.MainChatController;
 
 import java.awt.*;
 
 public class Main {
+
+    private static MainChatController chat;
+
     public static void main(String[] args) {
-        Dimension d = new Dimension();
 
         start();
     }
@@ -16,8 +18,7 @@ public class Main {
         EventQueue.invokeLater(new Runnable() {
             public void run() {
                 try {
-                    MainChatView chat = new MainChatView(new Dimension(1092, 720));
-                    //MainChatView chat = new MainChatView(new Dimension(720, 480));
+                    chat = new MainChatController(new Dimension(1092, 720));
                     chat.setVisible(true);
                 } catch (Exception e) {
                     e.printStackTrace();
