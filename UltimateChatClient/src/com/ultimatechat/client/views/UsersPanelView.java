@@ -4,7 +4,10 @@ import com.ultimatechat.client.models.User;
 import com.ultimatechat.client.views.basic_views.PanelView;
 
 import javax.swing.*;
+import javax.swing.event.ListSelectionEvent;
+import javax.swing.event.ListSelectionListener;
 import java.awt.*;
+import java.awt.event.*;
 
 public class UsersPanelView extends PanelView {
 
@@ -20,6 +23,18 @@ public class UsersPanelView extends PanelView {
         super(container, widthPercent, heightPercent);
     }
 
+    public User[] getUsersList() {
+        return usersList;
+    }
+
+    public JScrollPane getUsersScrollView() {
+        return usersScrollView;
+    }
+
+    public JList<User> getUsersListView() {
+        return usersListView;
+    }
+
     @Override
     protected void createView(Dimension d) {
         setSize(d);
@@ -28,7 +43,6 @@ public class UsersPanelView extends PanelView {
         usersScrollView = new JScrollPane(usersListView);
         setLayout(new BorderLayout());
         add(usersScrollView, BorderLayout.CENTER);
-
     }
 
     public void setUsers (User[] users) {

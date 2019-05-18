@@ -35,9 +35,8 @@ public class ChatPanelView extends PanelView {
 
     public void updateChatView() {
         ArrayList<Message> chatMessages = chat.getMessages();
-        Message[] messages = new Message[chatMessages.size()];
-        chatMessages.toArray(messages);
-        messageListView.setListData(messages);
+        messageListView.getDragEnabled();
+        messageListView.setListData(chatMessages.toArray(new Message[chatMessages.size()]));
     }
     public void setChat(Chat chat) {
         this.chat = chat;
@@ -45,7 +44,7 @@ public class ChatPanelView extends PanelView {
     }
 
     public void addMessage(Message message) {
-        chat.addMesage(message);
+        chat.addMessage(message);
         updateChatView();
     }
 

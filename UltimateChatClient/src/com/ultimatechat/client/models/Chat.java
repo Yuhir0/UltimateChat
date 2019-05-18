@@ -19,7 +19,7 @@ public class Chat {
         return this.messages;
     }
 
-    public void addMesage(Message message) {
+    public void addMessage(Message message) {
         this.messages.add(message);
     }
 

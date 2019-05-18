@@ -1,6 +1,5 @@
 package com.ultimatechat.client.views.basic_views;
 
-import com.ultimatechat.client.Controllers.InputController;
 
 import javax.swing.*;
 import java.awt.*;

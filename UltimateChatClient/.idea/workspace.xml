@@ -2,9 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a0361a3b-970e-419c-b358-f4c61de71ceb" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/com/ultimatechat/client/Controllers/InputController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ultimatechat/client/Controllers/InputController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ultimatechat/client/Controllers/MainChatController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ultimatechat/client/Controllers/MainChatController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ultimatechat/client/views/UserInputPanelView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ultimatechat/client/views/UserInputPanelView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/ultimatechat/client/controllers/ServerInputController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/ultimatechat/client/dummy/ChatsList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/ultimatechat/client/dummy/UsersList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/ultimatechat/client/models/ServerSignal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltimateChatClient/com/ultimatechat/client/Main$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/UltimateChatClient/com/ultimatechat/client/Main$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UltimateChatClient/com/ultimatechat/client/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/UltimateChatClient/com/ultimatechat/client/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/ultimatechat/client/Controllers/InputController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/ultimatechat/client/Controllers/MainChatController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ultimatechat/client/controllers/MainChatController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/ultimatechat/client/Controllers/basic_controllers/FrameController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ultimatechat/client/controllers/basic_controllers/FrameController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/ultimatechat/client/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ultimatechat/client/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/ultimatechat/client/models/Chat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ultimatechat/client/models/Chat.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/ultimatechat/client/views/ChatPanelView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ultimatechat/client/views/ChatPanelView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/ultimatechat/client/views/UsersPanelView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ultimatechat/client/views/UsersPanelView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/ultimatechat/client/views/basic_views/PanelView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ultimatechat/client/views/basic_views/PanelView.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -21,57 +35,55 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/ultimatechat/client/Controllers/MainChatController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="287">
-              <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/ultimatechat/client/Controllers/basic_controllers/FrameController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="294">
-              <caret line="21" selection-start-line="21" selection-end-line="21" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/ultimatechat/client/Main.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="147">
-              <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/ultimatechat/client/views/basic_views/PanelView.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="308">
-              <caret line="28" selection-start-line="28" selection-end-line="28" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/com/ultimatechat/client/Controllers/InputController.java">
+        <entry file="file://$PROJECT_DIR$/src/com/ultimatechat/client/controllers/MainChatController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="308">
-              <caret line="53" column="53" lean-forward="true" selection-start-line="53" selection-start-column="53" selection-end-line="53" selection-end-column="53" />
+            <state relative-caret-position="219">
+              <caret line="62" column="36" selection-start-line="62" selection-start-column="36" selection-end-line="62" selection-end-column="36" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1790#1791#0" expanded="true" />
+                <element signature="e#1903#2224#0" expanded="true" />
+                <element signature="e#2223#2224#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/ultimatechat/client/dummy/ChatsList.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="278">
+              <caret line="81" column="28" selection-start-line="81" selection-start-column="28" selection-end-line="81" selection-end-column="28" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/ultimatechat/client/views/UsersPanelView.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="174">
+              <caret line="23" column="5" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#710#711#0" expanded="true" />
+                <element signature="e#742#743#0" expanded="true" />
+                <element signature="e#721#722#0" expanded="true" />
+                <element signature="e#759#760#0" expanded="true" />
+                <element signature="e#804#805#0" expanded="true" />
+                <element signature="e#840#841#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/ultimatechat/client/models/Message.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="37">
+              <caret line="9" column="33" selection-start-line="9" selection-start-column="33" selection-end-line="9" selection-end-column="33" />
             </state>
           </provider>
         </entry>
@@ -79,22 +91,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/ultimatechat/client/views/ChatPanelView.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="231">
-              <caret line="11" selection-start-line="11" selection-end-line="11" />
+            <state relative-caret-position="227">
+              <caret line="38" selection-start-line="38" selection-end-line="38" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1277#1278#0" expanded="true" />
-                <element signature="e#1304#1305#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/ultimatechat/client/models/Chat.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="308">
-              <caret line="34" column="37" selection-start-line="34" selection-start-column="37" selection-end-line="34" selection-end-column="37" />
             </state>
           </provider>
         </entry>
@@ -137,18 +138,27 @@
         <option value="$PROJECT_DIR$/src/com/ultimatechat/client/views/MainChatCellRender.java" />
         <option value="$PROJECT_DIR$/src/com/ultimatechat/client/views/basic_views/FrameView.java" />
         <option value="$PROJECT_DIR$/src/com/ultimatechat/client/models/User.java" />
-        <option value="$PROJECT_DIR$/src/com/ultimatechat/client/models/Message.java" />
         <option value="$PROJECT_DIR$/src/com/ultimatechat/client/views/MainChatView.java" />
         <option value="$PROJECT_DIR$/src/com/ultimatechat/client/Controllers/basic_controllers/FrameController.java" />
         <option value="$PROJECT_DIR$/src/com/ultimatechat/client/Main.java" />
         <option value="$PROJECT_DIR$/src/com/ultimatechat/client/models/Chat.java" />
-        <option value="$PROJECT_DIR$/src/com/ultimatechat/client/views/ChatPanelView.java" />
-        <option value="$PROJECT_DIR$/src/com/ultimatechat/client/views/UsersPanelView.java" />
         <option value="$PROJECT_DIR$/src/com/ultimatechat/client/Controllers/basic_controllers/InputController.java" />
-        <option value="$PROJECT_DIR$/src/com/ultimatechat/client/views/basic_views/PanelView.java" />
-        <option value="$PROJECT_DIR$/src/com/ultimatechat/client/Controllers/InputController.java" />
         <option value="$PROJECT_DIR$/src/com/ultimatechat/client/Controllers/MainChatController.java" />
         <option value="$PROJECT_DIR$/src/com/ultimatechat/client/views/UserInputPanelView.java" />
+        <option value="$PROJECT_DIR$/src/com/ultimatechat/client/Controllers/InputController.java" />
+        <option value="$PROJECT_DIR$/src/com/ultimatechat/client/controllers/ServerSignal.java" />
+        <option value="$PROJECT_DIR$/src/com/ultimatechat/client/models/ServerSignal.java" />
+        <option value="$PROJECT_DIR$/src/com/ultimatechat/client/dummy/UserersList.java" />
+        <option value="$PROJECT_DIR$/src/com/ultimatechat/client/dummy/UsersList.java" />
+        <option value="$PROJECT_DIR$/src/com/ultimatechat/client/controllers/ServerInputController.java" />
+        <option value="$PROJECT_DIR$/src/com/ultimatechat/client/views/basic_views/PanelView.java" />
+        <option value="$PROJECT_DIR$/src/com/ultimatechat/client/views/UsersPanelView.java" />
+        <option value="$PROJECT_DIR$/src/com/ultimatechat/client/views/ChatPanelView.java" />
+        <option value="$PROJECT_DIR$/src/com/ultimatechat/client/controllers/UsersListController.java" />
+        <option value="$PROJECT_DIR$/src/com/ultimatechat/client/controllers/UserInputController.java" />
+        <option value="$PROJECT_DIR$/src/com/ultimatechat/client/models/Message.java" />
+        <option value="$PROJECT_DIR$/src/com/ultimatechat/client/dummy/ChatsList.java" />
+        <option value="$PROJECT_DIR$/src/com/ultimatechat/client/controllers/MainChatController.java" />
       </list>
     </option>
   </component>
@@ -159,19 +169,76 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="48" />
-    <option name="y" value="52" />
-    <option name="width" value="1184" />
-    <option name="height" value="719" />
+    <option name="x" value="1359" />
+    <option name="width" value="1922" />
+    <option name="height" value="1056" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
-    <navigator proportions="" version="1">
+    <navigator currentView="Scope" currentSubView="Scope 'Production'; set:Production; class com.intellij.psi.search.scope.ProjectProductionScope" proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
+      <pane id="PackagesPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="UltimateChatClient" type="58d84e3e:PackageViewProjectNode" />
+              <item name="UltimateChatClient" type="616d4139:PackageViewModuleNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope">
+        <subPane subId="Scope 'Production'; set:Production; class com.intellij.psi.search.scope.ProjectProductionScope">
+          <expand>
+            <path>
+              <item name="UltimateChatClient" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="UltimateChatClient" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+            </path>
+            <path>
+              <item name="UltimateChatClient" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="UltimateChatClient" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="UltimateChatClient" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="UltimateChatClient" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="com.ultimatechat.client" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="UltimateChatClient" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="UltimateChatClient" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="com.ultimatechat.client" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="controllers" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+        <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
+          <expand>
+            <path>
+              <item name="UltimateChatClient" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="UltimateChatClient" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+            </path>
+            <path>
+              <item name="UltimateChatClient" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="UltimateChatClient" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="UltimateChatClient" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="UltimateChatClient" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="com.ultimatechat.client" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -194,38 +261,7 @@
               <item name="UltimateChatClient" type="b2602c69:ProjectViewProjectNode" />
               <item name="UltimateChatClient" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="client" type="462c0819:PsiDirectoryNode" />
-              <item name="Controllers" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="UltimateChatClient" type="b2602c69:ProjectViewProjectNode" />
-              <item name="UltimateChatClient" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="client" type="462c0819:PsiDirectoryNode" />
-              <item name="Controllers" type="462c0819:PsiDirectoryNode" />
-              <item name="basic_controllers" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="UltimateChatClient" type="b2602c69:ProjectViewProjectNode" />
-              <item name="UltimateChatClient" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="client" type="462c0819:PsiDirectoryNode" />
-              <item name="models" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="UltimateChatClient" type="b2602c69:ProjectViewProjectNode" />
-              <item name="UltimateChatClient" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="client" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="UltimateChatClient" type="b2602c69:ProjectViewProjectNode" />
-              <item name="UltimateChatClient" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="client" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="basic_views" type="462c0819:PsiDirectoryNode" />
+              <item name="controllers" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -235,11 +271,17 @@
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.ultimatechat.client.controllers" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -309,25 +351,28 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="25" width="1920" height="1016" extended-state="6" />
+    <frame x="1359" y="0" width="1922" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4988864" visible="true" weight="0.19637139" />
-      <window_info id="Structure" order="1" sideWeight="0.5011136" side_tool="true" weight="0.24959612" />
-      <window_info id="Designer" order="2" />
-      <window_info id="UI Designer" order="3" />
-      <window_info id="Favorites" order="4" sideWeight="0.5011136" side_tool="true" weight="0.24959612" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.3298969" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3802978" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="8" />
-      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.32875144" />
-      <window_info anchor="bottom" id="Regex Tester" order="11" />
+      <window_info id="DB Browser" order="0" />
+      <window_info content_ui="combo" id="Project" order="1" sideWeight="0.4988864" visible="true" weight="0.19829424" />
+      <window_info id="Structure" order="2" sideWeight="0.5011136" side_tool="true" weight="0.24959612" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Favorites" order="5" sideWeight="0.5011136" side_tool="true" weight="0.24959612" />
+      <window_info anchor="bottom" id="DB Execution Console" order="0" />
+      <window_info anchor="bottom" id="Message" order="1" />
+      <window_info anchor="bottom" id="Find" order="2" weight="0.3293348" />
+      <window_info anchor="bottom" id="Run" order="3" weight="0.37949836" />
+      <window_info active="true" anchor="bottom" id="Debug" order="4" visible="true" weight="0.3991276" />
+      <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="7" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Terminal" order="9" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.32824427" />
+      <window_info anchor="bottom" id="Regex Tester" order="12" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -336,38 +381,24 @@
       <window_info anchor="right" id="Palette&#9;" order="5" />
       <window_info anchor="right" id="Swing Playground" order="6" side_tool="true" />
     </layout>
-    <layout-to-restore>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4988864" visible="true" weight="0.19637139" />
-      <window_info id="Structure" order="1" sideWeight="0.5011136" side_tool="true" weight="0.24959612" />
-      <window_info id="Designer" order="2" />
-      <window_info id="UI Designer" order="3" />
-      <window_info id="Favorites" order="4" sideWeight="0.5011136" side_tool="true" weight="0.24959612" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.3298969" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3802978" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="8" />
-      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.32875144" />
-      <window_info anchor="bottom" id="Regex Tester" order="11" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="right" id="Maven" order="4" weight="0.32956383" />
-      <window_info anchor="right" id="Palette&#9;" order="5" />
-      <window_info anchor="right" id="Swing Playground" order="6" side_tool="true" />
-    </layout-to-restore>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="añadiendo cosas de intellij" />
     <MESSAGE value="reorganización" />
     <MESSAGE value="input controller" />
     <option name="LAST_COMMIT_MESSAGE" value="input controller" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/ultimatechat/client/controllers/MainChatController.java</url>
+          <line>100</line>
+          <properties />
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-12.0.1.jdk/Contents/Home/lib/src.zip!/java.desktop/java/awt/GridBagLayout.java" />
@@ -396,63 +427,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/ultimatechat/client/models/Message.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="31" selection-start-column="31" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/ultimatechat/client/views/MainChatCellRender.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="31" selection-start-column="31" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/ultimatechat/client/models/Chat.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="34" column="37" selection-start-line="34" selection-start-column="37" selection-end-line="34" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/ultimatechat/client/views/UsersPanelView.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="21">
-          <caret line="19" column="54" lean-forward="true" selection-start-line="19" selection-start-column="54" selection-end-line="19" selection-end-column="54" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/ultimatechat/client/Controllers/basic_controllers/BasicController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
-          <caret line="2" column="30" lean-forward="true" selection-start-line="2" selection-start-column="30" selection-end-line="2" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/ultimatechat/client/views/ChatPanelView.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="11" selection-start-line="11" selection-end-line="11" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1277#1278#0" expanded="true" />
-            <element signature="e#1304#1305#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/ultimatechat/client/views/basic_views/PanelView.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="28" selection-start-line="28" selection-end-line="28" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/ultimatechat/client/views/MainChatCellRender.java" />
+    <entry file="file://$PROJECT_DIR$/src/com/ultimatechat/client/Controllers/basic_controllers/BasicController.java" />
     <entry file="jrt:///usr/lib/jvm/java-11-openjdk-amd64!/java.base/java/lang/String.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="277">
@@ -461,13 +437,6 @@
             <element signature="e#26285#26286#0" expanded="true" />
             <element signature="e#26352#26353#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/ultimatechat/client/Controllers/basic_controllers/FrameController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="21" selection-start-line="21" selection-end-line="21" />
         </state>
       </provider>
     </entry>
@@ -497,23 +466,140 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/ultimatechat/client/Controllers/MainChatController.java">
+    <entry file="file://$PROJECT_DIR$/src/com/ultimatechat/client/controllers/basic_controllers/FrameController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="287">
-          <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
+        <state relative-caret-position="294">
+          <caret line="21" selection-start-line="21" selection-end-line="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/ultimatechat/client/models/Chat.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="483">
+          <caret line="34" column="37" selection-start-line="34" selection-start-column="37" selection-end-line="34" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/ultimatechat/client/views/basic_views/PanelView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="21">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/ultimatechat/client/Controllers/InputController.java">
+    <entry file="file://$PROJECT_DIR$/src/com/ultimatechat/client/models/ServerSignal.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="53" column="53" lean-forward="true" selection-start-line="53" selection-start-column="53" selection-end-line="53" selection-end-column="53" />
+        <state relative-caret-position="147">
+          <caret line="7" column="29" selection-start-line="7" selection-start-column="29" selection-end-line="7" selection-end-column="29" />
+          <folding>
+            <element signature="e#134#135#0" expanded="true" />
+            <element signature="e#169#170#0" expanded="true" />
+            <element signature="e#126#127#0" expanded="true" />
+            <element signature="e#153#154#0" expanded="true" />
+            <element signature="e#205#206#0" expanded="true" />
+            <element signature="e#228#229#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/ultimatechat/client/controllers/ServerInputController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="21">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1790#1791#0" expanded="true" />
+            <element signature="e#253#254#0" expanded="true" />
+            <element signature="e#279#280#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/ultimatechat/client/models/Message.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="37">
+          <caret line="9" column="33" selection-start-line="9" selection-start-column="33" selection-end-line="9" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/ultimatechat/client/views/ChatPanelView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="227">
+          <caret line="38" selection-start-line="38" selection-end-line="38" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/ultimatechat/client/controllers/UserInputController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="61" column="5" lean-forward="true" selection-start-line="59" selection-start-column="4" selection-end-line="61" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/ultimatechat/client/dummy/UsersList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="20" column="8" selection-start-line="20" selection-start-column="8" selection-end-line="20" selection-end-column="8" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/ultimatechat/client/controllers/UsersListController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="416">
+          <caret line="21" column="25" lean-forward="true" selection-start-line="21" selection-start-column="25" selection-end-line="21" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#474#693#0" expanded="true" />
+            <element signature="e#692#693#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/ultimatechat/client/views/UsersPanelView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="174">
+          <caret line="23" column="5" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#710#711#0" expanded="true" />
+            <element signature="e#742#743#0" expanded="true" />
+            <element signature="e#721#722#0" expanded="true" />
+            <element signature="e#759#760#0" expanded="true" />
+            <element signature="e#804#805#0" expanded="true" />
+            <element signature="e#840#841#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/ultimatechat/client/dummy/ChatsList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="278">
+          <caret line="81" column="28" selection-start-line="81" selection-start-column="28" selection-end-line="81" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/ultimatechat/client/controllers/MainChatController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="219">
+          <caret line="62" column="36" selection-start-line="62" selection-start-column="36" selection-end-line="62" selection-end-column="36" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1903#2224#0" expanded="true" />
+            <element signature="e#2223#2224#0" expanded="true" />
           </folding>
         </state>
       </provider>

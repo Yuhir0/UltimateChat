@@ -1,7 +1,7 @@
 package com.ultimatechat.client;
 
 
-import com.ultimatechat.client.Controllers.MainChatController;
+import com.ultimatechat.client.controllers.MainChatController;
 
 import java.awt.*;
 

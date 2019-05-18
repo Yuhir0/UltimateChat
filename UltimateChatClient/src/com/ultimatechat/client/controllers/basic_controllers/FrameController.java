@@ -1,4 +1,4 @@
-package com.ultimatechat.client.Controllers.basic_controllers;
+package com.ultimatechat.client.controllers.basic_controllers;
 
 import javax.swing.*;
 import java.awt.*;
